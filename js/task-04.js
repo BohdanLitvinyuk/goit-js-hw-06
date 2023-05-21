@@ -8,15 +8,15 @@ const refs = {
 
 refs.btnDecrementEl.addEventListener("click", onButtonClick);
 refs.btnIncrementEl.addEventListener("click", onButtonClick);
-let counter = 0;
+let counterValue = 0;
 
 function onButtonClick(e) {
     const id = e.target.dataset.action;
     console.log(id)
     if (id === "increment") {
-        counter += 1;
-        console.log(refs.valueEl.textContent = counter);
+        counterValue += 1;
+        console.log(refs.valueEl.textContent = counterValue);
         return;
-    } counter -= 1;
-     console.log(refs.valueEl.textContent = counter);
+    } counterValue -= 1;
+     console.log(refs.valueEl.textContent = counterValue);
 }
